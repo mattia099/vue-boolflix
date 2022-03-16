@@ -32,5 +32,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
-  }
+    padding-top: 40px;
+}
 </style>
