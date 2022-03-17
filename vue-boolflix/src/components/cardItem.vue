@@ -48,8 +48,20 @@ export default {
     margin:0 auto;
     color: white;
     position: relative;
+    box-shadow: 0px 0px 20px 10px black;
     &:hover .info{
       display: block;
+      background: rgba(0, 0, 0, 0.8);
+      opacity: 1;
+      animation: opacity 1s ease-out;
+      @keyframes opacity {
+        from{
+          opacity: 0;
+        }
+        100%{
+          opacity: 8;
+        }
+      }
     }
     .info{
     display: none;
@@ -58,7 +70,6 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
     padding: 50px 30px;
     
     h4,p{

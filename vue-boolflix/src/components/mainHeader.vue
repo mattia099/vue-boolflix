@@ -31,19 +31,24 @@ export default {
 
 <style lang="scss" scoped>
   header{
-    background-color: black;
+    background: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px;
+    
     h1{
       color: red;
+      
     }
     .input-container{
-      
+      display: flex;
+      flex-wrap: nowrap;
       input{
         font-size: 16px;
         padding: 5px;
+        min-width: 100px;
       }
       button{
         font-size: 16px;
@@ -52,4 +57,5 @@ export default {
       }
     }
   }
+
 </style>

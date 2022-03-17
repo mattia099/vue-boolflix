@@ -41,13 +41,16 @@ export default {
       color: white;
       text-align: center;
       padding-top: 40px;
+      text-transform: uppercase;
     }
     .card-wrapper{
       background-color: #141414;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap:20px;
+      grid-template-columns: repeat(auto-fill, minmax(342px, auto));
+      gap:40px;
       padding-top: 40px;
+      max-width: 1500px;
+      margin: 0 auto;
     }
   }
 </style>
