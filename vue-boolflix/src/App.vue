@@ -20,7 +20,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 *{
   margin: 0;
   padding: 0;

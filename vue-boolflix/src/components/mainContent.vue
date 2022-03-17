@@ -1,6 +1,14 @@
 <template>
-  <div class="card-wrapper">
-    <cardItem class="film" v-for="film in getFilms" :key="film.id" :element="film" />
+  <div class="">
+    <h2>Film</h2>
+    <div class="card-wrapper">
+      <cardItem  v-for="film in getFilms" :key="film.id" :element="film" />
+    </div>
+
+    <h2>Serie TV</h2>
+    <div class="card-wrapper">
+      <cardItem  v-for="serie in getSeries" :key="serie.id" :element="serie" />
+    </div>
   </div>
 </template>
 
@@ -18,7 +26,7 @@ export default {
     },
 
     getSeries(){
-      return state.series;
+      return state.findedSeries;
     }
   },
     
@@ -27,11 +35,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .card-wrapper{
+  div{
     background-color: #141414;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:20px;
-    padding-top: 40px;
-}
+    h2{
+      color: white;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .card-wrapper{
+      background-color: #141414;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap:20px;
+      padding-top: 40px;
+    }
+  }
 </style>
